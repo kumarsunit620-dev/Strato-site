@@ -1,38 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Strato - Coming Soon</title>
-  <style>
-    body {
-      margin: 0;
-      background-color: #ffffff;
-      font-family: Arial, sans-serif;
-      color: #000;
-      text-align: center;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Strato | Coming Soon</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    height:100vh;
+    overflow:hidden;
+
+    background:
+        linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+        url("background.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.content{
+
+    width:90%;
+    max-width:750px;
+
+    text-align:center;
+
+    color:#fff;
+
+    background:rgba(0,0,0,.25);
+
+    backdrop-filter:blur(12px);
+
+    -webkit-backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    border-radius:22px;
+
+    padding:60px 50px;
+
+    animation:fadeUp 1.2s ease;
+}
+
+.logo{
+
+    width:340px;
+
+    max-width:85%;
+
+    margin-bottom:35px;
+}
+
+h1{
+
+    font-size:56px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+    letter-spacing:1px;
+}
+
+.subtitle{
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+    font-weight:500;
+
+    color:#ffffff;
+}
+
+.description{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#f1f1f1;
+
+    max-width:620px;
+
+    margin:auto;
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
     }
-    .logo {
-      margin-top: 100px;
-      width: 300px;
-      max-width: 80%;
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
     }
-    h1 {
-      font-size: 2em;
-      font-weight: bold;
-      font-style: italic;
-      margin-top: 40px;
-    }
-    p {
-      font-size: 1.1em;
-      margin: 10px 0;
-    }
-  </style>
+
+}
+
+@media(max-width:768px){
+
+.logo{
+
+    width:240px;
+
+}
+
+h1{
+
+    font-size:38px;
+
+}
+
+.subtitle{
+
+    font-size:19px;
+
+}
+
+.description{
+
+    font-size:16px;
+
+}
+
+.content{
+
+    padding:40px 25px;
+
+}
+
+}
+
+</style>
+
 </head>
+
 <body>
-  <img src="strato-logo.png" alt="Strato Logo" class="logo">
-  <h1>Coming Soon</h1>
-  <p>Coming soon to Fiji</p>
-  <p>Tropical-ready air conditioning designed for Fiji homes, offices, hotels, and commercial spaces.</p>
+
+<div class="content">
+
+<img src="strato-logo.png" class="logo" alt="Strato Logo">
+
+<h1>Coming Soon</h1>
+
+<p class="subtitle">
+Coming Soon to Fiji
+</p>
+
+<p class="description">
+Tropical-ready air conditioning designed for Fiji homes, offices, hotels, and commercial spaces.
+</p>
+
+</div>
+
 </body>
 </html>
