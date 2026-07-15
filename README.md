@@ -324,7 +324,6 @@ Notify Me
 
 <div class="footer">
 
-© 2026 STRATO Air Conditioning • Fiji
 
 </div>
 
