@@ -4,154 +4,122 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Strato | Coming Soon</title>
+<title>Strato - Coming Soon</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
 
 <style>
 
-*{
+body {
     margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
     height:100vh;
-    overflow:hidden;
-
-    background:
-        linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-        url("background.jpg");
-
+    background-image:url("YOUR-BACKGROUND-IMAGE-LINK");
     background-size:cover;
     background-position:center;
-    background-repeat:no-repeat;
-
+    font-family:'Montserrat', sans-serif;
+    color:white;
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
+    text-align:center;
 }
+
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.45);
+}
+
 
 .content{
-
-    width:90%;
-    max-width:750px;
-
-    text-align:center;
-
-    color:#fff;
-
-    background:rgba(0,0,0,.25);
-
-    backdrop-filter:blur(12px);
-
-    -webkit-backdrop-filter:blur(12px);
-
-    border:1px solid rgba(255,255,255,.18);
-
-    border-radius:22px;
-
-    padding:60px 50px;
-
-    animation:fadeUp 1.2s ease;
+    position:relative;
+    z-index:2;
+    padding:30px;
 }
+
+
+/* STRATO LOGO STYLE */
 
 .logo{
 
-    width:340px;
-
-    max-width:85%;
-
-    margin-bottom:35px;
-}
-
-h1{
-
-    font-size:56px;
-
+    font-family:'Orbitron', sans-serif;
+    font-size:90px;
+    letter-spacing:12px;
     font-weight:700;
+    text-transform:uppercase;
 
-    margin-bottom:20px;
+    background:linear-gradient(
+    90deg,
+    #ffffff,
+    #bfe9ff
+    );
 
-    letter-spacing:1px;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    text-shadow:
+    0 0 20px rgba(255,255,255,0.35);
+
 }
 
-.subtitle{
 
-    font-size:24px;
+/* COMING SOON TEXT */
 
-    margin-bottom:15px;
+.coming{
 
-    font-weight:500;
+    margin-top:25px;
+    font-size:42px;
+    font-weight:600;
+    letter-spacing:5px;
+    font-family:'Montserrat',sans-serif;
 
-    color:#ffffff;
 }
+
+
+.location{
+
+    margin-top:15px;
+    font-size:22px;
+    font-weight:300;
+    letter-spacing:3px;
+
+}
+
 
 .description{
 
+    max-width:650px;
+    margin:30px auto;
     font-size:18px;
-
-    line-height:1.8;
-
-    color:#f1f1f1;
-
-    max-width:620px;
-
-    margin:auto;
-}
-
-@keyframes fadeUp{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(40px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
+    line-height:1.7;
+    font-weight:300;
 
 }
+
+
 
 @media(max-width:768px){
 
 .logo{
-
-    width:240px;
-
+font-size:55px;
+letter-spacing:7px;
 }
 
-h1{
 
-    font-size:38px;
-
+.coming{
+font-size:28px;
 }
 
-.subtitle{
 
-    font-size:19px;
-
+.location{
+font-size:16px;
 }
+
 
 .description{
-
-    font-size:16px;
-
-}
-
-.content{
-
-    padding:40px 25px;
-
+font-size:15px;
 }
 
 }
@@ -160,23 +128,40 @@ h1{
 
 </head>
 
+
 <body>
+
+
+<div class="overlay"></div>
+
 
 <div class="content">
 
-<img src="strato-logo.png" class="logo" alt="Strato Logo">
 
-<h1>Coming Soon</h1>
+<div class="logo">
+STRATO
+</div>
 
-<p class="subtitle">
-Coming Soon to Fiji
-</p>
 
-<p class="description">
+<div class="coming">
+COMING SOON
+</div>
+
+
+<div class="location">
+TO FIJI
+</div>
+
+
+<div class="description">
+
 Tropical-ready air conditioning designed for Fiji homes, offices, hotels, and commercial spaces.
-</p>
 
 </div>
+
+
+</div>
+
 
 </body>
 </html>
